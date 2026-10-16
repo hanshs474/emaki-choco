@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>emaki</id>
+    <version>0.1.0</version>
+    <title>emaki CLI (Seedance 2.5 AI video generator)</title>
+    <authors>emaki</authors>
+    <owners>emaki</owners>
+    <projectUrl>https://emaki.ai/?utm_source=chocolatey&amp;utm_medium=package</projectUrl>
+    <packageSourceUrl>https://github.com/hanshs474/emaki-choco</packageSourceUrl>
+    <projectSourceUrl>https://github.com/hanshs474/emaki-go</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/hanshs474/emaki-go/issues</bugTrackerUrl>
+    <licenseUrl>https://github.com/hanshs474/emaki-go/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://emaki.ai/logo.png</iconUrl>
+    <tags>emaki ai video-generator text-to-video image-to-video seedance seedance-2-5 image-generator cli japanese</tags>
+    <summary>Official CLI for emaki (emaki.ai), the Japanese-language AI video generator for Seedance 2.5 and Seedance 2.0.</summary>
+    <description><![CDATA[Official CLI for [emaki](https://emaki.ai/?utm_source=chocolatey&utm_medium=package) (emaki.ai), the Japanese-language AI video generator for [Seedance 2.5](https://emaki.ai/seedance-2-5) and [Seedance 2.0](https://emaki.ai/seedance-2). Generate a video clip or an image from the Windows command line; each command prints the URL of the finished file.
+
+```
+emaki -credits
+emaki "a paper lantern drifting over a night river"
+emaki -model seedance_2 -p duration=8 -p resolution=720p "a fox in fresh snow"
+emaki -p image=https://example.com/first-frame.jpg "the camera slowly pushes in"
+emaki -image "a ramen shop at dusk, isometric"
+```
+
+Set `EMAKI_API_KEY` to a key from [emaki.ai/settings/apikeys](https://emaki.ai/settings/apikeys). Each run costs credits on your emaki account, the same price as on the website. Video models: `seedance_2_5` (default), `seedance_2`, `seedance_2_fast`, `seedance_2_mini`, `minimax_h3`, `veo_3_1`. Image models: `nano_banana_2_lite`, `nano_banana_2`, `seedream_5_lite`, `gpt_image_2`.
+
+On the web: [image to video](https://emaki.ai/image-to-video) and the [AI video upscaler](https://emaki.ai/video-upscaler). 日本語での使い方は [シーダンス](https://emaki.ai/) へ。]]></description>
+    <releaseNotes>https://github.com/hanshs474/emaki-go/releases/tag/v0.1.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools/**" target="tools" />
+  </files>
+</package>
